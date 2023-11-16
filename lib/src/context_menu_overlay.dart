@@ -61,6 +61,8 @@ class ContextMenuOverlayState extends State<ContextMenuOverlay> {
   ContextMenuButtonStyle get buttonStyle =>
       widget.buttonStyle ?? defaultButtonStyle;
 
+  bool get isShowing => _currentMenu != null;
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
